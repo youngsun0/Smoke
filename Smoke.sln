@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smoke", "Smoke.csproj", "{1556CCC8-C361-41B6-B0D2-A29B05DD7549}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smoke.Tests", "Smoke.Tests\Smoke.Tests\Smoke.Tests.csproj", "{469D28C6-5511-4B9E-8807-DA1B035F1A6A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1556CCC8-C361-41B6-B0D2-A29B05DD7549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1556CCC8-C361-41B6-B0D2-A29B05DD7549}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1556CCC8-C361-41B6-B0D2-A29B05DD7549}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1556CCC8-C361-41B6-B0D2-A29B05DD7549}.Release|Any CPU.Build.0 = Release|Any CPU
+		{469D28C6-5511-4B9E-8807-DA1B035F1A6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{469D28C6-5511-4B9E-8807-DA1B035F1A6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{469D28C6-5511-4B9E-8807-DA1B035F1A6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{469D28C6-5511-4B9E-8807-DA1B035F1A6A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9489C2FE-7AFA-4447-A2B9-79480FDB76FE}
+	EndGlobalSection
+EndGlobal

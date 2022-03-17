@@ -1,0 +1,45 @@
+﻿<Window x:Class="Smoke.Views.SmokeView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Smoke.Views"
+        mc:Ignorable="d" FontSize="15"
+        Title="SmokeView" Height="450" Width="800">
+    <Grid>
+        <Grid Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.Resources >
+                    <Style TargetType="Border" >
+                        <Setter Property="Margin" Value="10" />
+                    </Style>
+                </Grid.Resources>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Column="0" Grid.Row="0">Query:</TextBlock>
+                <TextBox x:Name="Query" Grid.Column="1" Grid.Row="0" Margin="20,1" />
+
+                <TextBlock Grid.Column="0" Grid.Row="1">URL:</TextBlock>
+                <TextBox x:Name="Url" Grid.Column="1" Grid.Row="1" Margin="20,1" />
+
+                <Button x:Name="Search" Grid.Row="0" Grid.Column="2" Grid.RowSpan="2" 
+                        IsEnabled="{Binding IsSearchButtonEnabled, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
+                        Padding="10,0">Search</Button>
+            </Grid>
+
+            <ContentControl Grid.Row="1" x:Name="ActiveItem" Margin="0,10,0,0"/>
+        </Grid>
+    </Grid>
+</Window>
